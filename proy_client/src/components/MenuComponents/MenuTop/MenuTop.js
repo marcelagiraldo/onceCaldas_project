@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'antd';
-import Logo from "../../../assets/img/png/Logo.png";
+import OnceCaldas from "../../../assets/img/png/OnceCaldas.png";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import "./MenuTop.scss"
 
@@ -15,7 +15,7 @@ export const MenuTop = (props) => {
             <Button type='link' onClick={()=>setMenuCollapsed(!menuCollapsed)} aria-label={menuCollapsed ? "Mostrar menú" : "Ocultar menu"}>
                 {menuCollapsed ? <MenuUnfoldOutlined />:<MenuFoldOutlined />}
             </Button>
-            <img src={Logo} alt='Logo' className='menu-top__left__logo'/>
+            <img src={OnceCaldas} alt='Logo' className='menu-top__left__logo'/>
         </div>
     </div>
   )
