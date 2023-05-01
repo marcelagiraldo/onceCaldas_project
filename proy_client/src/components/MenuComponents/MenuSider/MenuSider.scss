@@ -23,10 +23,11 @@
         text-overflow: ellipsis;
     }
     .ant-menu-item-selected{
-        background-color: $primary_color_light;
+        background-color: white;
         color: $primary_color_text;
     }
     .ant-menu-submenu-title{
+        color: white;
         margin: 0;
     }
     .ant-menu-inline-collapsed{

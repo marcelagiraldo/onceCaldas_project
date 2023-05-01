@@ -10,7 +10,7 @@ export const MenuSider = (props) => {
     const location = useLocation();
 
     const menuItems = [
-        { key:"users",icon:<HomeOutlined/>, label: "Gection de usuarios"},
+        { key:"users",icon:<HomeOutlined/>, label: "Gestion de usuarios"},
         {key: "products", icon: <TeamOutlined/>,label:"Portafolio de servicios"},
         {key:"clients",icon:<AppstoreOutlined/>,label:"Clientes",subMenu:[
             {key:"clients/list",icon:<TeamOutlined/>,label:"Lista de clientes"},
