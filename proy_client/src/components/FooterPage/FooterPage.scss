@@ -5,7 +5,7 @@
     color: #a3a4a4;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: cneter;
     justify-content: left;
     padding: 24px;
     font-size: 14px;
@@ -14,6 +14,11 @@
     bottom: 0;
     position: fixed;
     width: 100%;
+    margin-top: auto;
+
+    .container {
+        min-height: calc(100vh - 3000px); /* 80px es la altura del footer */
+    }
 
     a {
         color: #777;

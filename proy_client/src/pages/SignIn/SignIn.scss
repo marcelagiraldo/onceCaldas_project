@@ -1,0 +1,17 @@
+@import '../../scss/variables';
+
+.login-form{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-form-button{
+    background-color: white;
+    color: black;
+}

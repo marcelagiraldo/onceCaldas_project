@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppstoreOutlined, HomeOutlined, TeamOutlined } from '@ant-design/icons';
+import {  HomeOutlined, TeamOutlined } from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
 import { useLocation, useNavigate } from 'react-router-dom';
 import "./MenuSider.scss"
@@ -10,13 +10,19 @@ export const MenuSider = (props) => {
     const location = useLocation();
 
     const menuItems = [
-        { key:"users",icon:<HomeOutlined/>, label: "Gestion de usuarios"},
-        {key: "products", icon: <TeamOutlined/>,label:"Portafolio de servicios"},
-        {key:"clients",icon:<AppstoreOutlined/>,label:"Clientes",subMenu:[
-            {key:"clients/list",icon:<TeamOutlined/>,label:"Lista de clientes"},
-            {key:"clientes/new",icon:<TeamOutlined/>,label:"Nuevo cliente"},
+        { key:"jugadores",icon:<HomeOutlined/>, label: "Gestion Jugadores",subMenu:[
+            {key:"jugadores/lista",icon:<TeamOutlined/>,label:"Lista jugadores"},
+            {key:"jugadores/new",icon:<TeamOutlined/>,label:"Nuevo jugador"}
         ]},
-        {key:"news",icon: <AppstoreOutlined/>,label:"Gestion de noticias"}
+        {key: "jugador", icon: <TeamOutlined/>,label:"Jugadores",subMenu:[
+            {key:"jugadores/incial",icon:<TeamOutlined/>,label:"F.Inicial"},
+            {key:"jugadores/clinico",icon:<TeamOutlined/>,label:"F.Clínico"},
+            {key:"jugadores/evolucion",icon:<TeamOutlined/>,label:"F.Evolución"}
+        ]},
+        { key:"estudiantes",icon:<HomeOutlined/>, label: "Gestion estudiantes",subMenu:[
+            {key:"estudiantes/lista",icon:<TeamOutlined/>,label:"Lista estudiantes"},
+            {key:"estudiantes/new",icon:<TeamOutlined/>,label:"Nuevo estudiante"}
+        ]},
     ];
     const navigateTo = (e) => {
         const path = e.key;
@@ -45,12 +51,10 @@ export const MenuSider = (props) => {
         );
     };
   return (
-    <Sider className='menu-sider' collapsed={props.menuCollapsed}>
-        <Menu
-         mode='inline' onClick={navigateTo} defaultSelectedKeys={[location.pathname]}
-         defaultOpenKeys={menuItems.filter((item)=>item.subMenu).map((item)=>item.key)}>
+    <Sider className='menu-sider' collapsed={props.menuCollapsed} width={200}>
+        <Menu mode='inline' onClick={navigateTo} defaultSelectedKeys={[]} style={{ height: '100%', borderRight: 0 }}>
             {menuItems.map((item)=>itemRender(item))}
-         </Menu>
+        </Menu>
     </Sider>
   );
 }
