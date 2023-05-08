@@ -6,7 +6,7 @@ import React from 'react'
 
 export const Admin = () => {
   return (
-    <div>Admin</div>
+    <h2>Soy admin</h2>
   )
 }
 
