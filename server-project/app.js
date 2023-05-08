@@ -2,7 +2,6 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const cors = require("cors")
 const {API_VERSION} = require('./constants')
-
 const app = express()
 /* cargar rutas */
 const authRoutes = require("./src/routes/auth")
@@ -17,3 +16,4 @@ app.use(bodyParser.urlencoded({ extended : true}))
 app.use(`api/${API_VERSION}`, authRoutes)
 app.use(`api/${API_VERSION}`, userhRoutes)
 
+module.exports = app;
