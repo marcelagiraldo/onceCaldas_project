@@ -8,12 +8,13 @@ const authRoutes = require("./src/routes/auth")
 const userhRoutes = require("./src/routes/user")
 /* Trabajr con la extension client-rest */
 app.use(bodyParser.json())
-/* Evitar bloqueos en el navegador cuando se trabaje con back y front a la vez */
-app.use(cors())
 /* Pruebas de request usando postman */
 app.use(bodyParser.urlencoded({ extended : true}))
-
-app.use(`api/${API_VERSION}`, authRoutes)
-app.use(`api/${API_VERSION}`, userhRoutes)
+/* Evitar bloqueos en el navegador cuando se trabaje con back y front a la vez */
+app.use(cors())
+console.log(`api/${API_VERSION}/`);
+app.use(`api/${API_VERSION}`, authRoutes);
+app.use(`api/${API_VERSION}`, userhRoutes);
+module.exports = app;
 
 module.exports = app;

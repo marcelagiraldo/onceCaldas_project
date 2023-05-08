@@ -21,6 +21,9 @@
             padding: 0 10px;
         }
     }
+    .user{
+        align-items: center;
+    }
     button{
         margin-left: 5px;
         cursor: pointer;
@@ -34,5 +37,13 @@
         }
     }
 
+    .ant-btn-link {
+        color: white;
+    }
+    .ant-btn-link:not(:disabled){
+        &:hover {
+            color: white;
+        }
+    }
 }
 

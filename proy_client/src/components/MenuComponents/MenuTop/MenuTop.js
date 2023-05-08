@@ -1,8 +1,9 @@
 import React from 'react'
 import { Button } from 'antd';
 import OnceCaldas from "../../../assets/img/png/OnceCaldas.png";
-import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { MenuFoldOutlined, MenuUnfoldOutlined, UserOutlined } from '@ant-design/icons';
 import "./MenuTop.scss"
+/* import { Logout } from '../Logout/Logout'; */
 
 //MenuTop recibe las propiedades y se las comparte a menusider
 //Las propiedades las recibe de LayoutGeneral
@@ -16,6 +17,7 @@ export const MenuTop = (props) => {
                 {menuCollapsed ? <MenuUnfoldOutlined />:<MenuFoldOutlined />}
             </Button>
             <img src={OnceCaldas} alt='Logo' className='menu-top__left__logo'/>
+            <UserOutlined className='user'/>
         </div>
     </div>
   )

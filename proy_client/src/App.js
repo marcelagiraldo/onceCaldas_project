@@ -3,8 +3,8 @@ import React from 'react'
 import './App.scss'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AllRoutesProject from './config/routes'
-import  SignIn  from './pages/SignIn/SignIn'
-import { LayoutGenreal } from './layouts/GeneralLayout/LayoutGenreal'
+import  SignIn  from './pages/SIgIn/SignIn'
+import { LayoutGenreal } from './layouts/GeneralLayout/LayoutGerenal'
 
 const App = () => {
   return (

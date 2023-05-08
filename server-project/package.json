@@ -4,15 +4,15 @@
   "description": "",
   "main": "config.js",
   "scripts": {
-    "sart" : "node undex.js",
-    "dev" : "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node index.js",
+    "dev":"nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.20.2",
     "connect-multiparty": "^2.2.0",
@@ -22,7 +22,7 @@
     "multi-part": "^4.0.0"
   },
   "devDependencies": {
-    "mongoose": "^7.0.5",
+    "mongoose": "^7.1.0",
     "nodemon": "^2.0.22"
   }
 }
