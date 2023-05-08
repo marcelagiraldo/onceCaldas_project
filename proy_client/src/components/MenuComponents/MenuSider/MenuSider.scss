@@ -29,6 +29,9 @@
         color: $primary_color_text;
     }
     .ant-menu-submenu-title{
+        &:hover{
+            color: white;
+        }
         color: white;
         margin: 0;
     }

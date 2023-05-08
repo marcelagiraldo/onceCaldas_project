@@ -8,5 +8,3 @@ api.post("/auth/login",AuthController.login);
 api.post("/auth/refresh_access_token",AuthController.refreshAccessToekn);
 
 module.exports = api;
-
-

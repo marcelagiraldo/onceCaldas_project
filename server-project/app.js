@@ -17,3 +17,4 @@ app.use(`api/${API_VERSION}`, authRoutes);
 app.use(`api/${API_VERSION}`, userhRoutes);
 module.exports = app;
 
+module.exports = app;
