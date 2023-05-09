@@ -26,7 +26,7 @@ const createRefreshToken = (user)=>{
 };
 
 const decoded = (token)=>{
-    return jwt.decode(token,JWT_SECRET_KEY);
+    return jwt.decode(token,JWT_SECRET_KEY,true);
 };
 
 module.exports = {createAccessToken,createRefreshToken,decoded}

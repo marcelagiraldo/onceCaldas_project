@@ -1,4 +1,4 @@
-const DB_HOST = "@cluster0.ykmy0lr.mongodb.net";
+const DB_HOST = "cluster0.ykmy0lr.mongodb.net";
 const DB_USER = "project_server";
 const DB_PASSWORD = "project_server";
 const DB_NAME = "project_server_DB";

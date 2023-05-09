@@ -5,7 +5,7 @@ const {API_VERSION} = require('./constants')
 const app = express()
 /* cargar rutas */
 const authRoutes = require("./src/routes/auth")
-const userhRoutes = require("./src/routes/user")
+/* const userRoutes = require("./src/routes/user") */
 /* Trabajr con la extension client-rest */
 app.use(bodyParser.json())
 /* Pruebas de request usando postman */
@@ -13,8 +13,7 @@ app.use(bodyParser.urlencoded({ extended : true}))
 /* Evitar bloqueos en el navegador cuando se trabaje con back y front a la vez */
 app.use(cors())
 console.log(`api/${API_VERSION}/`);
-app.use(`api/${API_VERSION}`, authRoutes);
-app.use(`api/${API_VERSION}`, userhRoutes);
+app.use(`/api/${API_VERSION}/auth`, authRoutes);
+/* app.use(`/api/${API_VERSION}`, userRoutes); */
 module.exports = app;
 
-module.exports = app;
